@@ -1,5 +1,27 @@
 /* material.io */
 
 body {
-    background-color: black;
+    background-color: grey;
 }
+
+.container {
+    display: grid;
+    width: 360px;
+    height: 640px;
+    grid-template-columns: 100px, repeat(2, 910px);
+    grid-template-rows: 54px 54px 650px 80px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+}
+
+.menu {
+    position: absolute;
+    background: white;
+    display: none;
+}
+
+.fade {
+    background-color: grey;
+}
+/* @media screen and (min-width: 30em) and (orientation: landscape) { ... } */

@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Resos</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="img/logo.png" alt="logo">
+            <!-- <img src="img/icons/ic_reorder_black_24px.svg" alt="INFO" align="left" width="50" height="50"> -->
+            <img src="img/logo.png" alt="logo" v>
         </header>
+        <div class="menu">
+            <i class="material-icons" onclick="toggleMenu()">close</i>
+
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                </ul>
+        </div>
+        <main>
+            <i class="material-icons" onclick="toggleMenu()">info</i>
+        </main>
     </div>
+    <script src="js/menu.js"></script>
 </body>
 </html>
