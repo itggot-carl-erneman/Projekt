@@ -15,10 +15,38 @@ body {
     background-color: whitesmoke;
 }
 
+header{
+    /* margin-left: auto;   skapa grid i headern
+    margin-right: auto; */
+    grid-template-columns: repeat(4, 1fr);
+    
+    display: grid;
+}
+
+.travavellogo {
+    grid-column: 2/4;
+    margin-top: 5px;
+}
+
+.menulogo {
+    grid-column: 4/5;
+    margin-left: 32px;
+    margin-top: 15px;
+}
+
+.menu i {
+    top:20px;
+}
+
+
 .menu {
     position: absolute;
     background: white;
     display: none;
+}
+
+.show{
+    display: block;
 }
 
 .fade {
