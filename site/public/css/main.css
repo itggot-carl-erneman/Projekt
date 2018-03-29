@@ -1,126 +1,316 @@
-/* material.io */
-
 @media only screen and (max-device-width: 361px) {
+  body {
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif; }
 
-    body {
-        background-color: grey;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        font-family: Arial, sans-serif;
-    }
+  .container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../img/background_mobile.jpg"); }
 
-    .container {
-        display: grid;
-        width: 100vw;
-        height: 100vh;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url("../img/background.jpg");
-    }
+  header {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    grid-column: span 4;
+    grid-template-columns: repeat(4, 1fr);
+    position: fixed;
+    display: grid;
+    background-color: white;
+    color: red;
+    font-size: 2vh; }
 
-    header{
-        padding-top: 2vh;
-        padding-bottom: 2vh;
-        grid-column: span 4;
-        grid-template-columns: repeat(4, 1fr);
-        position: fixed;
-        display: grid;
-        background-color: white;
-        color: red;
-        font-size: 2vh;
-    }
+  .logo {
+    grid-column: 1/3;
+    margin-top: 2vh;
+    padding-left: 3vw;
+    color: red;
+    text-decoration: none;
+    cursor: pointer; }
 
-    .logo {
-        grid-column: 1/3;
-        margin-top: 2vh;
-        padding-left: 3vw;
-    }
+  .menu_logo_open {
+    grid-column: 4/5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    text-decoration: none;
+    font-size: 5.5vh;
+    cursor: pointer; }
 
-    .menu_logo_open {
-        grid-column: 4/5;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5vh;
-        text-decoration: none;
-        font-size: 5.5vh;
-        cursor: pointer;
-    }
+  .button1 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+    margin-left: auto;
+    margin-right: auto; }
 
-    .button1{
-        grid-row: 3 / 4;
-        grid-column: 2 / 4;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .transparent_btn {
+    display: inline-block;
+    padding: 5vw 7vh;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    text-decoration: none;
+    font-size: 15wh;
+    line-height: 120%;
+    background-color: rgba(0, 0, 0, 0.205);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: background-color 300ms ease;
+    -moz-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+    cursor: pointer; }
 
-    .transparent_btn {
-        display: inline-block;
-        padding: 10px 14px;
-        color: white;
-        border: 1px solid rgba(0, 0, 0, 0.205);
-        text-decoration: none;
-        font-size: 20px;
-        line-height: 120%;
-        background-color: rgba(0, 0, 0, 0.205);
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-        -webkit-transition: background-color 300ms ease;
-        -moz-transition: background-color 300ms ease;
-        transition: background-color 300ms ease;
-        cursor: pointer;
-    }
-    .transparent_btn:hover {
-        background-color: rgba(0, 0, 0, 0.349);
-        color: rgb(255, 253, 253);
-        border: 1px solid rgb(255, 255, 255);
-    }
-    .transparent_btn.red {
-	    color: #000000;
-	    border-color: #ffffff;
-    }
-    .transparent_btn.red:hover {
-        background-color: rgba(245, 174, 174, 0.3);
-        border-color: red;
-    }
+  .transparent_btn:hover {
+    background-color: rgba(0, 0, 0, 0.349);
+    color: #fffdfd;
+    border: 1px solid white; }
 
-    .menu {
-        position: fixed;
-        background: white;
-        right: -50vw;
-        width: 50vw;
-        height: 100vh;
-        transition: linear 0.3s;
-    }
+  .transparent_btn.red {
+    color: #000000;
+    border-color: #ffffff; }
 
-    .menu_logo_close {
-        right: 0;
-        size: 50px;
-        top:30px;
-        cursor: pointer;
-    }
+  .transparent_btn.red:hover {
+    background-color: rgba(245, 174, 174, 0.3);
+    border-color: red; }
 
-    .menu div {
-        grid-template-rows: repeat(8, 1fr);
-        display: grid;
-    }
+  .menu {
+    position: fixed;
+    background: white;
+    right: -50vw;
+    width: 50vw;
+    height: 100vh;
+    transition: linear 0.3s; }
 
-    .loginB {
-        grid-row: 1 / 2;
-    }
+  .menu_logo_close {
+    right: 0;
+    size: 50px;
+    top: 30px;
+    cursor: pointer; }
 
-    .omB {
-        grid-row: 2 / 3;
-    }
+  .menu div {
+    grid-template-rows: repeat(8, 1fr);
+    display: grid; }
 
-    .show{
-        right: 0vw;
-    }  
+  .loginB {
+    grid-row: 1 / 2; }
 
-    .fade {
-        background-color: rgba(255, 255, 255, 0.76);
-    }
-}
+  .omB {
+    grid-row: 2 / 3; }
+
+  .show {
+    right: 0vw; }
+
+  .fade {
+    background-color: rgba(255, 255, 255, 0.76); } }
+@media only screen and (min-device-width: 361px) {
+  body {
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif; }
+
+  .container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../img/background_desktop.jpg"); }
+
+  header {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    grid-column: span 4;
+    grid-template-columns: repeat(4, 1fr);
+    position: fixed;
+    display: grid;
+    background-color: white;
+    color: red;
+    font-size: 2vh; }
+
+  .logo {
+    grid-column: 1/3;
+    margin-top: 2vh;
+    padding-left: 3vw;
+    color: red;
+    text-decoration: none;
+    cursor: pointer; }
+
+  .menu_logo_open {
+    grid-column: 4/5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    text-decoration: none;
+    font-size: 5.5vh;
+    cursor: pointer; }
+
+  .button1 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .transparent_btn {
+    display: inline-block;
+    padding: 10px 14px;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 120%;
+    background-color: rgba(0, 0, 0, 0.205);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: background-color 300ms ease;
+    -moz-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+    cursor: pointer; }
+
+  .transparent_btn:hover {
+    background-color: rgba(0, 0, 0, 0.349);
+    color: #fffdfd;
+    border: 1px solid white; }
+
+  .transparent_btn.red {
+    color: #000000;
+    border-color: #ffffff; }
+
+  .transparent_btn.red:hover {
+    background-color: rgba(245, 174, 174, 0.3);
+    border-color: red; }
+
+  .menu {
+    position: fixed;
+    background: white;
+    right: -50vw;
+    width: 50vw;
+    height: 100vh;
+    transition: linear 0.3s; }
+
+  .menu_logo_close {
+    right: 0;
+    size: 50px;
+    top: 30px;
+    cursor: pointer; }
+
+  .menu div {
+    grid-template-rows: repeat(8, 1fr);
+    display: grid; }
+
+  .loginB {
+    grid-row: 1 / 2; }
+
+  .omB {
+    grid-row: 2 / 3; }
+
+  .show {
+    right: 0vw; }
+
+  .fade {
+    background-color: rgba(255, 255, 255, 0.76); } }
+@media only screen and (max-device-width: 361px) {
+  header {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    grid-column: span 4;
+    grid-template-columns: repeat(4, 1fr);
+    position: fixed;
+    display: grid;
+    background-color: white;
+    color: red;
+    font-size: 2vh; }
+
+  .logo {
+    grid-column: 1/3;
+    margin-top: 2vh;
+    padding-left: 3vw;
+    color: red;
+    text-decoration: none;
+    cursor: pointer; }
+
+  .menu_logo_open {
+    grid-column: 4/5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    text-decoration: none;
+    font-size: 5.5vh;
+    cursor: pointer; }
+
+  .button1 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .transparent_btn {
+    display: inline-block;
+    padding: 10px 14px;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 120%;
+    background-color: rgba(0, 0, 0, 0.205);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: background-color 300ms ease;
+    -moz-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+    cursor: pointer; }
+
+  .transparent_btn:hover {
+    background-color: rgba(0, 0, 0, 0.349);
+    color: #fffdfd;
+    border: 1px solid white; }
+
+  .transparent_btn.red {
+    color: #000000;
+    border-color: #ffffff; }
+
+  .transparent_btn.red:hover {
+    background-color: rgba(245, 174, 174, 0.3);
+    border-color: red; }
+
+  .menu {
+    position: fixed;
+    background: white;
+    right: -50vw;
+    width: 50vw;
+    height: 100vh;
+    transition: linear 0.3s; }
+
+  .menu_logo_close {
+    right: 0;
+    size: 50px;
+    top: 30px;
+    cursor: pointer; }
+
+  .menu div {
+    grid-template-rows: repeat(8, 1fr);
+    display: grid; }
+
+  .loginB {
+    grid-row: 1 / 2; }
+
+  .omB {
+    grid-row: 2 / 3; }
+
+  .show {
+    right: 0vw; }
+
+  .fade {
+    background-color: rgba(255, 255, 255, 0.76); } }
